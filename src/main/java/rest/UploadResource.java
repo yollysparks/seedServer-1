@@ -46,7 +46,7 @@ public class UploadResource {
 
   @Path("/file")
   @POST
-  @Consumes(MediaType.MULTIPART_FORM_DATA)
+   
   public Response uploadFile(@DefaultValue("") @FormDataParam("user") String user,
           @FormDataParam("file") InputStream file,
           @FormDataParam("file") FormDataContentDisposition fileDisposition) throws IOException {
